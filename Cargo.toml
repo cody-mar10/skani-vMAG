@@ -1,0 +1,13 @@
+[package]
+name = "skani-vmag"
+version = "0.1.0"
+edition = "2021"
+authors = ["Cody Martin <ccmartin6@wisc.edu>"]
+
+[dependencies]
+skani = { git = "https://github.com/bluenote-1577/skani" }
+clap = { version = "4.1", features = ["derive"] }
+
+[[bin]]
+name = "skani-vmag"
+path = "src/main.rs"
