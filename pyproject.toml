@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vskani"
+version = "0.0.1"
+authors = [{ name = "Cody Martin", email = "codycmar10@gmail.com" }]
+description = "Cluster unbinned and binned (vMAG) viruses using skani to compute pairwise ANI and the mcl algorithm for graph clustering."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+
+[project.scripts]
+vskani = "vskani:main.main"
+
+[project.urls]
+"Homepage" = "https://github.com/cody-mar10/protein_set_transformer"
+"Bug Tracker" = "https://github.com/cody-mar10/protein_set_transformer/issues"
